@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio Julia Tito Assunção (JTA), Desenvolvedora FullStack especializada em JavaScript, React e Node.js">
+    <meta name="keywords" content="dev fullstack, portfolio, JTA, JavaScript, React, Node.js, K-Pop, Rock">
+    <meta name="author" content="Julia Tito Assunção">
+    
+    <title>Meu nome é Julia - Dev FullStack</title>
+    
+    <!-- Pré-carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Efeitos de jogo -->
+    <div class="game-overlay">
+        <div class="scanlines"></div>
+        <div class="noise"></div>
+        <div class="vignette"></div>
+    </div>
+    
+    <!-- HUD do jogo -->
+    <div class="game-hud">
+        <div class="hud-item health-bar">
+            <span class="hud-label">CODING POWER</span>
+            <div class="bar-container">
+                <div class="bar-fill" style="width: 95%"></div>
+            </div>
+        </div>
+        <div class="hud-item level-indicator">
+            <span class="hud-label">LEVEL</span>
+            <span class="hud-value">42</span>
+        </div>
+        <div class="hud-item xp-bar">
+            <span class="hud-label">XP</span>
+            <div class="bar-container">
+                <div class="bar-fill" style="width: 78%"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Header estilo Cyberpunk/GTA -->
+    <header class="game-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="jta-logo">
+                    <span class="jta-badge glitch" data-text="JTA">JTA</span>
+                    <h1 class="neon-text glitch" data-text="Julia Tito Assunção">Julia Tito Assunção</h1>
+                </div>
+                <p class="professional-subtitle typing-effect">Desenvolvedora FullStack_</p>
+                <p class="personal-tagline pixel-text">><span class="blink">_</span> Código <span class="rock">hardcore</span> como metal, <span class="kpop">precisão</span> como K-Pop</p>
+            </div>
+            <div class="header-decoration">
+                <div class="radio-station">
+                    <div class="radio-display">
+                        <span class="station-name">K-DST - The Dust</span>
+                        <div class="radio-visualizer">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="radio-controls">
+                        <button class="radio-btn prev"><i class="fas fa-backward"></i></button>
+                        <button class="radio-btn play-pause"><i class="fas fa-play"></i></button>
+                        <button class="radio-btn next"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegação estilo menu de jogo -->
+    <nav class="game-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link menu-item" data-sound="hover">> Sobre</a></li>
+                <li><a href="#experience" class="nav-link menu-item" data-sound="hover">> Experiência</a></li>
+                <li><a href="#skills" class="nav-link menu-item" data-sound="hover">> Habilidades</a></li>
+                <li><a href="#projects" class="nav-link menu-item" data-sound="hover">> Projetos</a></li>
+                <li><a href="#contact" class="nav-link menu-item" data-sound="hover">> Contato</a></li>
+            </ul>
+            <div class="nav-extra">
+                <span class="jta-version pixel-text">JTA_v2.4.1</span>
+                <button class="theme-switcher menu-item" data-sound="switch">
+                    <i class="fas fa-adjust"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Seção Sobre -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title neon-text"><span class="jta-highlight">></span> SOBRE_MIM</h2>
+                <div class="about-container">
+                    <div class="about-image">
+                        <div class="pixel-border">
+                            <img src="images/Imagem do WhatsApp de 2025-03-12 à(s) 21.02.24_609231f3.jpg" alt="Julia Tito Assunção" loading="lazy" class="pixel-art">
+                        </div>
+                        <div class="character-stats">
+                            <div class="stat-item">
+                                <span class="stat-name pixel-text">FORÇA:</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-name pixel-text">INTEL:</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-name pixel-text">AGIL:</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="bio-container">
+                            <div class="professional-bio terminal-card">
+                                <h3><i class="fas fa-laptop-code"></i> PROFISSIONAL</h3>
+                                <div class="terminal-text">
+                                    <p>> Desenvolvedora FullStack com 1 anos de experiência</p>
+                                    <p>> Especialização: JavaScript, React, Node.js</p>
+                                    <p>> Missão: Criar sistemas eficientes e elegantes</p>
+                                </div>
+                            </div>
+                            <div class="personal-bio terminal-card">
+                                <h3><i class="fas fa-heart"></i> PESSOAL</h3>
+                                <div class="terminal-text">
+                                    <p>> Fã de rock pesado e K-Pop</p>
+                                    <p>> Gamer hardcore desde os tempos de PS2 e LAN houses</p>
+                                    <p>> Transformo paixão musical em código criativo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-details">
+                            <div class="terminal-card gta-card">
+                                <h3>> WHY "JTA"?</h3>
+                                <div class="terminal-text">
+                                    <p>> Iniciais + amor por games</p>
+                                    <p>> Código = Liberdade criativa com regras</p>
+                                    <p>> Estilo: GTA meets Cyberpunk</p>
+                                </div>
+                            </div>
+                            <div class="terminal-card music-card">
+                                <h3>> NOW PLAYING</h3>
+                                <div class="music-player">
+                                    <div class="album-cover">
+                                        <img src="images/ay60q1h5syh91.jpg" NewJeans Album" loading="Super Shy">
+                                    </div>
+                                    <div class="track-info">
+                                        <p class="track-name">NewJeans - Super Shy</p>
+                                        <p class="track-genre">K-Pop</p>
+                                        <div class="music-bars">
+                                            <span></span><span></span><span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Experiência -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title neon-text"><span class="jta-highlight">></span> EXPERIÊNCIA E FORMAÇÃO</h2>
+                <div class="timeline">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-item terminal-card">
+                        <div class="timeline-date pixel-text">2024-PRESENTE</div>
+                        <div class="timeline-content">
+                            <h3>> Vice-Presidente/Diretora do Financeiro </h3>
+                            <p class="company pixel-text">TECNO SYSTEN EJ</p>
+                            <ul class="terminal-text">
+                                <li>> Liderança estratégica na gestão financeira de projetos de tecnologia, garantindo sustentabilidade e alocação eficiente de recursos</li>
+                                <li>> Estruturação de processos financeiros integrados com ferramentas digitais (planilhas automatizadas, dashboards e sistemas ERP)</li>
+                                <li>> Apoio à presidência na tomada de decisões técnicas e operacionais, com foco em soluções escaláveis e inovação</li>
+                                <li>> Coordenação da área financeira em sinergia com squads de desenvolvimento, priorizando entregas com viabilidade econômica</li>
+                                <li>> Mentoria de membros com foco em gestão de produtos tech e desenvolvimento de soft e hard skills para o mercado de TI</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-item terminal-card">
+                        <div class="timeline-date pixel-text">2022-PRESENTE</div>
+                        <div class="timeline-content">
+                            <h3>> Bacharelado Em Sistemas de Informação</h3>
+                            <p class="company pixel-text">UNEB - Universidade do Estado da Bahia</p>
+                            <ul class="terminal-text">
+                                <li>> Formação em algoritmos, estruturas de dados e programação orientada a objetos</li>
+                                <li>> Desenvolvimento e integração de sistemas com foco em aplicações web e APIs REST</li>
+                                <li>> Modelagem, gerenciamento e otimização de bancos de dados relacionais e não-relacionais</li>
+                                <li>> Fundamentos de redes, arquitetura de computadores e segurança da informação</li>
+                                <li>> Análise de sistemas, engenharia de requisitos e modelagem de processos de negócio</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-badge">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title neon-text"><span class="jta-highlight">></span> HABILIDADES</h2>
+                <div class="skills-grid">
+                    <div class="skill-category terminal-card">
+                        <h3 class="category-title"><i class="fas fa-laptop-code"></i> FRONT-END</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">HTML:5</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">CSS</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">JAVASCRIPT/TYPESCRIPT</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category terminal-card">
+                        <h3 class="category-title"><i class="fas fa-server"></i> BACK-END</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">C</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">NODE.JS</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">PHP</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 88%"></div>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category terminal-card">
+                        <h3 class="category-title"><i class="fas fa-database"></i> BANCO DE DADOS</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">MONGODB</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name pixel-text">MYSQL</span>
+                                <div class="skill-meter">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title neon-text"><span class="jta-highlight">></span> PROJETOS</h2>
+                <div class="projects-carousel">
+        
+                    <!-- Projeto 1 -->
+                    <div class="project-card terminal-card">
+                        <div class="project-header">
+                            <h3>> PLATAFORMA DE OTAKU SITE MANGA </h3>
+                            <div class="project-tags">
+                                <span class="tag-react">HTML</span>
+                                <span class="tag-node">CSS</span>
+                                <span class="tag-mongo">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/site manga.png" alt="Plataforma E-commerce" loading="lazy">
+                            <div class="project-overlay">
+                                <p>> Cadastro de novos mangás (com título, autor, descrição e capa)</p>
+                                <p>> Edição de mangás existentes (atualizar título, capítulos, sinopse, etc.)</p>
+                                <p>> Exclusão de mangás (remover mangás da plataforma)</p>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="window.open('https://trymysemfq.github.io/MeuSiteManga/', '_blank')" class="project-btn demo" data-sound="select">
+                                <i class="fas fa-play"></i> DEMO
+                            </button>
+                            <button onclick="window.open('https://github.com/TryMySeMfQ/MeuSiteManga', '_blank')" class="project-btn code" data-sound="select">
+                                <i class="fab fa-github"></i> CÓDIGO
+                            </button>
+                        </div>
+                    </div>
+        
+                    <!-- Projeto 2 -->
+                    <div class="project-card terminal-card">
+                        <div class="project-header">
+                            <h3>> API Sefurança Femnina</h3>
+                            <div class="project-tags">
+                                <span class="tag-vue">Node.js</span>
+                                <span class="tag-firebase">EXPRESS</span>
+                                <span class="tag-kpop">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/api.png" alt="K-Pop Tracker" loading="lazy">
+                            <div class="project-overlay">
+                                <p>> Mapa interativo de locais de apoio e segurança (centros de apoio, delegacias, hospitais)</p>
+                                <p>> Informações atualizadas sobre serviços de emergência (telefones de contato, linhas de apoio)</p>
+                                <p>> Dicas de segurança e prevenção (informações sobre como se proteger em diferentes situações)</p>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="window.open('https://trymysemfq.github.io/APIwoman/', '_blank')" class="project-btn demo" data-sound="select">
+                                <i class="fas fa-play"></i> DEMO
+                            </button>
+                            <button onclick="window.open('https://github.com/TryMySeMfQ/APIwoman', '_blank')" class="project-btn code" data-sound="select">
+                                <i class="fab fa-github"></i> CÓDIGO
+                            </button>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Seção Contato -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title neon-text"><span class="jta-highlight">></span> CONTATO</h2>
+                <div class="contact-container">
+                    <div class="contact-info terminal-card">
+                        <h3>> INFO</h3>
+                        <div class="contact-details">
+                            <p><i class="fas fa-envelope"></i> juliatitoassuncao2003@gmail.com</p>
+                            <p><i class="fas fa-phone"></i> +55 (75) 99287-3094</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Entre Rios, BR</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/TryMySeMfQ" class="social-btn github" data-sound="hover">
+                                <i class="fab fa-github"></i> GITHUB
+                            </a>
+                            <a href="https://www.linkedin.com/in/devjuliatito/" class="social-btn linkedin" data-sound="hover">
+                                <i class="fab fa-linkedin"></i> LINKEDIN
+                            </a>
+                            <a href="https://open.spotify.com/user/jta-rock-kpop" class="social-btn spotify" data-sound="hover">
+                                <i class="fab fa-spotify"></i> SPOTIFY
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form terminal-card">
+                        <h3>> ENVIE UMA MENSAGEM</h3>
+                        <div class="form-group">
+                            <label class="pixel-text">NOME:</label>
+                            <input type="text" placeholder="Seu nome" required class="terminal-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="pixel-text">EMAIL:</label>
+                            <input type="email" placeholder="Seu email" required class="terminal-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="pixel-text">MENSAGEM:</label>
+                            <textarea placeholder="Sua mensagem" required class="terminal-input"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-sound="confirm">
+                            <i class="fas fa-paper-plane"></i> ENVIAR
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer estilo Cyberpunk -->
+    <footer class="game-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="jta-signature">
+                    <span class="jta-badge">JTA</span>
+                    <p class="pixel-text">© <span id="current-year"></span> JULIA TITO ASSUNÇÃO</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#about" class="footer-link" data-sound="hover">SOBRE</a>
+                    <a href="#projects" class="footer-link" data-sound="hover">PROJETOS</a>
+                    <a href="#contact" class="footer-link" data-sound="hover">CONTATO</a>
+                </div>
+                <div class="footer-credits">
+                    <p class="pixel-text">MADE WITH <i class="fas fa-heart"></i> AND <i class="fas fa-code"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="easter-egg" id="easterEgg">
+            <span class="pixel-text">SECRET UNLOCKED: ALL YOUR CODE ARE BELONG TO US</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
