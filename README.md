@@ -46,8 +46,9 @@ Este é o meu **site de portfólio**, desenvolvido para apresentar meus projetos
 
 ## 📧 Contato
 
-- **LinkedIn:** [linkedin.com/in/seuusuario](https://www.linkedin.com/in/devjuliatito/)  
+- **LinkedIn:** [Julia Tito](https://www.linkedin.com/in/devjuliatito/)  
 - **Email:** juliatitoassuncao2003@gmail.com  
-- **GitHub:** [github.com/seuusuario](https://github.com/TryMySeMfQ)  
+- **GitHub:** [TryMySeMfQ](https://github.com/TryMySeMfQ)  
 
 ---
+
