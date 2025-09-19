@@ -10,7 +10,7 @@ Este é o meu **site de portfólio**, desenvolvido para apresentar meus projetos
 
 ## 🚀 Tecnologias Utilizadas
 
-- **HTML:5**
+- **HTML5**
 - **CSS3**
 - **JavaScript (ES6+)**
 
@@ -51,5 +51,6 @@ Este é o meu **site de portfólio**, desenvolvido para apresentar meus projetos
 - **GitHub:** [TryMySeMfQ](https://github.com/TryMySeMfQ)  
 
 ---
+
 
 
